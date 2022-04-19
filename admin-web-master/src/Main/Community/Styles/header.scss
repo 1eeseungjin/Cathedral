@@ -1,0 +1,28 @@
+@import "./colors.scss";
+
+@mixin header {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 40px 0px;
+}
+
+@mixin header-title {
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.40000003576278687px;
+    text-align: left;
+}
+
+@mixin searchBox {
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0px 3px;
+    padding: 0px 5px;
+    height: 100%;
+}

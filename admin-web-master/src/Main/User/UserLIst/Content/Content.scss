@@ -1,0 +1,193 @@
+.user-list-content {
+  width: 100%;
+
+  &-header {
+    border-bottom: 2px solid #dfe0eb;
+    padding-bottom: 5px;
+    display: flex;
+    width: 100%;
+
+    &-check {
+      margin-left: 2vw;
+      width: 2.6%;
+      display: flex;
+    }
+
+    &-no {
+      width: 4.3%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+
+      & > img {
+        margin-left: 5px;
+      }
+    }
+
+    &-date {
+      cursor: pointer;
+      width: 8.3%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+
+      & > img {
+        margin-left: 5px;
+      }
+    }
+
+    &-name {
+      cursor: pointer;
+      width: 6%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-baptismal {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+
+    }
+
+    &-id {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-phone {
+      width: 13%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-region {
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-temple {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &-list {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+
+.user-report {
+  &-header {
+    display: flex;
+    border-bottom: 2px solid #dfe0eb;
+    padding-bottom: 5px;
+
+    &-date {
+      cursor: pointer;
+      width: 8.3%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-name {
+      cursor: pointer;
+      width: 6%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-region {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-id {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-temple {
+      cursor: pointer;
+      width: 10%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-count {
+      cursor: pointer;
+      width: 6.6%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-reason {
+      cursor: pointer;
+      width: 26%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+.user-ban {
+  &-header {
+    display: flex;
+    border-bottom: 2px solid #dfe0eb;
+    padding-bottom: 5px;
+
+    &-bandate {
+      cursor: pointer;
+      width: 8.3%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-reason {
+      cursor: pointer;
+      width: 26%;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+.user-dormancy {
+  &-header {
+    &-date {
+      width: 8.3%;
+      cursor: pointer;
+      color: #9fa2b4;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

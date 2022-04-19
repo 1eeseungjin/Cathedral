@@ -1,0 +1,40 @@
+@import "../../Styles/header.scss";
+@import "../../Styles/body.scss";
+@import "../../Styles/contents.scss";
+
+.notice-add {
+    &-header {
+        @include body-header-edit();
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 70px 40px 70px;
+        gap: 24px;
+
+        &-contents {
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+            gap: 24px;
+
+            &-title {
+                @include content(title, 42px);
+            }
+
+            &-contents {
+                @include content(contents, 550px);
+                resize: none;
+            }
+        }
+
+        &-files {
+            @include contents-files();
+        }
+
+        &-space {
+            flex-grow: 1;
+        }
+    }
+}

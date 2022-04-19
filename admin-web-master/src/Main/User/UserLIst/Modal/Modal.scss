@@ -1,0 +1,126 @@
+.push-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-wrap {
+    background: white;
+    width: 19.8vw;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  &-title {
+    margin-top: 4.8%;
+
+    &-text {
+      color: #9fa2b4;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    & > input {
+      width: 100%;
+      height: 40px;
+      margin-top: 5px;
+      border: 1px solid #F0F1F7;
+      padding-left: 15px;
+      border-radius: 8px;
+    }
+  }
+
+  &-content {
+    margin-top: 30px;
+
+    &-text {
+      color: #9fa2b4;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    & > textarea {
+      width: 100%;
+      height: 272px;
+      margin-top: 5px;
+      border: 1px solid #F0F1F7;
+      resize: none;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 34px;
+    color: white;
+    background: #062d47;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.ban-modal {
+  &-header {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  &-content {
+
+    &-content {
+      margin-top: 4.8%;
+      &-text {
+        color: #9fa2b4;
+        font-size: 14px;
+        font-weight: 700; 
+      }
+
+      & > textarea {
+        width: 100%;
+        height: 362px;
+        margin-top: 5px;
+        border: 1px solid #F0F1F7;
+        resize: none;
+        padding: 10px;
+        border-radius: 8px; 
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      height: 48px;
+      border-radius: 8px;
+      margin-top: 34px;
+      color: white;
+      background: #062d47;
+      border: 0;
+      cursor: pointer; 
+    }
+  }
+}

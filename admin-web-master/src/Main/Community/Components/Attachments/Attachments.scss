@@ -1,0 +1,178 @@
+@import "../../Styles/contents.scss";
+
+.attachments {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 24px;
+
+    .voiceFiles {
+        height: fit-content;
+
+        &-label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #9FA2B4;
+            margin-bottom: 6px;
+        }
+
+        &-list {
+            background-color: #FCFDFE;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #CBCBCB;
+            border-radius: 8px;
+            flex-grow: 1;
+
+            &-file {
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11px;
+                border-bottom: 1px solid #E7E7E7;
+
+                &-logo {
+                    height: 21px;
+                    width: auto;
+                    margin-right: 10px;
+                }
+
+                &-name {
+                    flex-grow: 1;
+                    max-width: 220px;
+                    color: #737373;
+                    font-weight: 400;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                &-add {
+                    flex-grow: 1;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    text-decoration-line: underline;
+                    color: #737373;
+                    text-align: center;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                &-btn {
+                    font-size: 12px;
+                    padding: 6.5px 11.5px;
+                    background-color: $gray;
+                    border: 0px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #9FA2B4;
+            margin-bottom: 6px;
+        }
+
+        &-value {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding: 11px;
+            gap: 3px;
+            font-size: 14px;
+            font-weight: 400;
+            background-color: #FCFDFE;
+            border: 1px solid #CBCBCB;
+            border-radius: 8px;
+
+            &-name {
+                flex-grow: 1;
+                max-width: 182.47px;
+                color: #737373;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &-btn {
+                font-size: 12px;
+                padding: 6.5px 11.5px;
+                background-color: $gray;
+                border: 0px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .files {
+        @include content(full, null);
+        flex-grow: 1;
+
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-btn {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                text-decoration-line: underline;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-list {
+            background-color: #FCFDFE;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #CBCBCB;
+            border-radius: 8px;
+            flex-grow: 1;
+
+            &-file {
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11px;
+                border-bottom: 1px solid #E7E7E7;
+
+                &-name {
+                    color: #737373;
+                    font-weight: 400;
+                    flex-grow: 1;
+                    max-width: 220px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                &-btn {
+                    font-size: 12px;
+                    padding: 6.5px 11.5px;
+                    background-color: $gray;
+                    border: 0px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

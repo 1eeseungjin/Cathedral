@@ -1,0 +1,182 @@
+.registration {
+    margin-top: 39px;
+    margin-left: 40px;
+
+    &-header {
+        font-size: 28px;
+        font-weight: bold;
+        color: #bbbbbb;
+    }
+
+    &-body {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        &-left {
+            flex: 2;
+            &-top {
+                display: flex;
+                flex-direction: row;
+                &-title {
+                    flex: 1;
+                    font-size: 24px;
+                    &-text {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        color: #9fa2b4;
+                        &-star {
+                            color: red;
+                        }
+                    }
+                    &-input {
+                        margin-top: 21px;
+                        color: #000;
+                        width: 447px;
+                        height: 54px;
+                        padding: 18px 24px;
+                    }
+                }
+                &-division {
+                    flex: 1;
+                    font-size: 24px;
+                    &-text {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        &-left {
+                            color: #9fa2b4;
+                            font-size: 24px;
+                        }
+                        &-center {
+                            color: red;
+                        }
+                        &-right {
+                            font-size: 13px;
+                            color: #898989;
+                            margin-left: 14px;
+                        }
+                    }
+                    &-check {
+                        margin-top: 16px;
+                        &-line {
+                            margin-top: 8px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            &-title {
+                                color: #9fa2b4;
+                                font-size: 20px;
+                                margin-right: 20px;
+                            }
+                            &-contents {
+                                flex: 1;
+                                color: #000;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-down {
+                margin-top: 26px;
+                &-main {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 24px;
+                    color: #9fa2b4;
+                    &-star {
+                        color: red;
+                    }
+                }
+                &-input {
+                    margin-top: 11px;
+                    padding: 25px 25px;
+                    width: 900px;
+                    height: 200px;
+                    font-size: 16px;
+                    color: #000;
+                    vertical-align: top;
+                }
+            }
+        }
+        &-right {
+            color: #9fa2b4;
+            font-size: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-title {
+                align-self: flex-start;
+                justify-content: flex-start;
+                margin-top: 31px;
+                font-size: 30px;
+                color: #000;
+            }
+            &-contents {
+                margin-top: 7px;
+                font-size: 20px;
+                color: #000;
+                border: 1px solid #000;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space: pre-wrap;
+            }
+        }
+    }
+
+    &-footer {
+        margin-top: 30px;
+        margin-left: 34px;
+        display: flex;
+        flex-direction: row;
+        &-file {
+            flex: 1;
+            margin-right: 97px;
+            color: #9fa2b4;
+            font-size: 24px;
+            &-post {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                &-input {
+                    width: 353px;
+                    height: 54px;
+                    margin-right: 11px;
+                    padding: 17px 24px;
+                    font-size: 16px;
+                    color: #000;
+                }
+                &-button {
+                    align-self: center;
+                    padding: 8px 27px;
+                    font-size: 16px;
+                    border: 1px solid rgba(0, 0, 0, 0.4);
+                    border-radius: 10px;
+                    color: #000;
+                    cursor: pointer;
+                }
+            }
+        }
+        &-button {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            &-finish {
+                margin-left: 14px;
+                padding: 8px 27px;
+                font-size: 16px;
+                border: 1px solid rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                color: #000;
+                cursor: pointer;
+            }
+        }
+    }
+}

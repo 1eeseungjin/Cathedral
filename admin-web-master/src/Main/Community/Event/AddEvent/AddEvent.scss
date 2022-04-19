@@ -1,0 +1,29 @@
+@import "../../Styles/header.scss";
+@import "../../Styles/body.scss";
+@import "../../Styles/contents.scss";
+
+.event-add {
+    &-header {
+        @include body-header();
+        margin: 40px;
+
+        &-backspace {
+            @include body-header-backspace();
+        }
+
+        &-title {
+            @include body-header-title();
+        }
+
+        &-btn {
+            @include body-header-btn-detail();
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 70px 40px 70px;
+        gap: 24px;
+    }
+}

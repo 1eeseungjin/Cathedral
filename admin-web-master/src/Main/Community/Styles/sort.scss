@@ -1,0 +1,15 @@
+@import "./table.scss";
+
+:export {
+    backgroundSize: contain;
+    backgroundRepeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    marginLeft: 3px;
+    borderSize: 0px;
+    textAlign: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

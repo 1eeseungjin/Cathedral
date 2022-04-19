@@ -1,0 +1,43 @@
+@import "../EventList.scss";
+@import "../../../Styles/body.scss";
+@import "../../../Styles/table.scss";
+
+.event-list-table-items-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 0;
+    padding: 0px 30px;
+    border-bottom: 1px solid $gray;
+
+    &-title {
+        @include table-item($title);
+    }
+
+    &-memberName {
+        @include table-item($memberName);
+    }
+
+    &-term {
+        @include table-item($term);
+    }
+
+    &-status {
+        @include table-item($status);
+    }
+
+    &-createdAt {
+        @include table-item($createdAt);
+    }
+
+    &-views {
+        @include table-item($views);
+    }
+
+    &-setting {
+        @include table-item(0);
+        @include setting();
+    }
+}

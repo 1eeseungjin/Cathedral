@@ -1,0 +1,234 @@
+.admin-list {
+    width: 100%;
+    height: 80%;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+
+    &-date {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: flex-end;
+        padding-inline: 50px;
+
+        &-title {
+            font-weight: 300;
+            font-size: 15px;
+            color: black;
+        }
+
+        &-input {
+            margin-left: 10px;
+            width: 130px;
+        }
+
+        &-btn {
+            display: flex;
+            width: 48px;
+            height: 25px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+
+    &-header {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        margin-top: 10px;
+        padding-inline: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-end {
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+
+            &-search-result {
+                font-size: 14px;
+                font-weight: 500;
+                color: #9FA2B4;
+            }
+
+            &-save-excel {
+                font-size: 14px;
+                font-weight: 500;
+                color: #9FA2B4;
+                cursor: pointer;
+                background-color: white;
+                width: 83px;
+                height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    &-info {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        // margin-top: 40px;
+        padding-inline: 40px;
+        flex-direction: row;
+
+        &-item {
+            &-checkbox {
+                margin-right: 28px;
+                margin-left: 40px;
+                cursor: pointer;
+            }
+
+            &-idx {
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+            }
+
+            &-created-at {
+                flex:2.8;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+
+            &-name {
+                flex:1.8;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+
+            &-baptismal {
+                flex:3;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+
+            &-id {
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+
+            &-phone {
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+            }
+
+            &-permission {
+                flex:4.5;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+            &-residence {
+                flex:3;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                
+                cursor: pointer;
+            }
+            &-temple {
+                flex:3;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+
+            &-cancel-cause {
+                flex:5;
+                font-size: 18px;
+                font-weight: 600;
+                color: #9FA2B4;
+                cursor: pointer;
+            }
+        }
+
+        &-divide-line {
+            border: 2px solid #DFE0EB;
+            margin-top: 10px;
+        }
+    }
+
+    &-data {
+        width: 100%;
+        height: 60%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    &-button {
+        width: 150px;
+        height: 45px;
+        color:#fff;
+        background: #062D47;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        white-space: pre-wrap;
+        padding: 10px;
+        border: 0;
+        border-radius: 10%;
+    }
+
+    &-bottom {
+        display: flex;
+        width: 100%;
+        padding-block: 20px;
+        padding-right: 38px;
+        height: fit-content;
+        justify-content: flex-end;
+
+        &-button {
+            width: 97px;
+            height: 41px;
+            background: #062D47;
+            color: white;
+            margin-right: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            white-space: pre-wrap;
+            padding: 10px;
+            border: 0;
+        }
+
+    }
+}

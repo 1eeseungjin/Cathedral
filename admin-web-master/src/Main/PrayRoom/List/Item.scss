@@ -1,0 +1,127 @@
+.pray-room-item {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dfe0eb;
+
+  &-data {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+
+    &-startDate {
+      width: 11.7%;
+      margin-left: 40px;
+      display: flex;
+      margin-right: 0.7%;
+    }
+
+    &-title {
+      width: 20%;
+    }
+
+    &-name {
+      width: 6.3%;
+    }
+
+    &-region {
+      width: 10.4%;
+    }
+
+    &-temple {
+      width: 10.6%;
+    }
+
+    &-mysteria {
+      width: 10%;
+    }
+
+    &-user {
+      width: 13%;
+    }
+  }
+
+  &-btns {
+    display: flex;
+    position: relative;
+
+    &-allday {
+      background: #2f43ba;
+      width: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      height: 24px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    &-live {
+      background: #ff0000;
+      width: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      height: 24px;
+      border-radius: 5px;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+  }
+
+  &-more-icon {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  &-modal {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > div {
+      width: 124px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      z-index: 123;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    & > div:hover {
+      background: #dfe0eb;
+    }
+
+    &-wrap {
+      position: relative;
+    }
+  }
+}
+
+.modal-first {
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #dfe0eb;
+  border-bottom: 0;
+}
+
+.modal-second {
+  border: 1px solid #dfe0eb;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.modal-third {
+  border-radius: 0px 0px 5px 5px;
+  border: 1px solid #dfe0eb;
+  border-top: 0;
+}

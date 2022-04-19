@@ -1,0 +1,49 @@
+@import '../../Styles/contents.scss';
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    @include content(preview, 0);
+
+    &-value {
+        border: 0px;
+
+        &-comment {
+            display: flex;
+            flex-direction: column;
+
+            &-info {
+                margin: 10px;
+
+                &-profile {}
+
+                &-detail {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    &-name {
+                        font-family: Pretendard;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 16px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #999999;
+                    }
+
+                    &-contents {
+                        font-family: Pretendard;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

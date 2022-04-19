@@ -1,0 +1,63 @@
+@import "../../../Community/Styles/header.scss";
+@import "../../../Community/Styles/body.scss";
+@import "../../../Community/Styles/table.scss";
+
+$default: 3.75%;
+
+$title: calc($default * 4);
+$modifiedAt: calc($default * 4);
+
+.prayer-list {
+    &-header {
+        @include body-header();
+        padding: 35px 40px 15px 40px;
+
+        &-title {
+            @include body-header-title();
+        }
+
+        &-search {
+            @include body-header-search();
+        }
+
+        &-addBtn {
+            @include body-header-btn-list();
+        }
+    }
+
+    &-table {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+
+        &-head {
+            display: flex;
+            border-bottom: 2px solid $gray;
+            padding: 0px 30px;
+
+            &-title {
+                @include table-head($title);
+
+                &-sort {
+                    @include sortButton();
+                }
+            }
+
+            &-modifiedAt {
+                @include table-head($modifiedAt);
+
+                &-sort {
+                    @include sortButton();
+                }
+            }
+
+            &-setting {
+                @include table-head(0);
+            }
+        }
+
+        &-items {
+            @include table-items();
+        }
+    }
+}

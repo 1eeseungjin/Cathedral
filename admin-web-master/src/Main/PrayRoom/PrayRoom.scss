@@ -1,0 +1,155 @@
+.pray-room {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+
+  &-header {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    &-search {
+      padding-right: 10px;
+      margin-top: 10px;
+      width: 423px;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #dfe0eb;
+      border-radius: 500px;
+
+      & > input {
+        border: 0;
+        height: 100%;
+        border-radius: 500px;
+        width: 90%;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #dfe0eb;
+
+    &-wrap {
+      width: 100%;
+      height: 90%;
+      margin-top: 50px;
+    }
+
+    &-header {
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-title {
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      &-btn {
+        width: 120px;
+        height: 50px;
+        background-color: #062d47;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    &-list {
+      margin-top: 30px;
+      height: 80%;
+
+      &-header {
+        border-bottom: 2px solid #dfe0eb;
+        display: flex;
+
+        &-menu {
+          margin-right: 5px;
+          color: #9fa2b4;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        &-startDate {
+          margin-left: 40px;
+          font-size: 19px;
+          width: 11.7%;
+          display: flex;
+          align-items: center;
+          margin-right: 0.7%;
+        }
+
+        &-title {
+          font-size: 19px;
+          width: 20%;
+          display: flex;
+          align-items: center;
+        }
+
+        &-name {
+          width: 6%;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          margin-right: 0.3%;
+        }
+
+        &-region {
+          width: 10%;
+          font-size: 19px;
+          display: flex;
+          align-items: center;
+          margin-right: 0.4%;
+        }
+
+        &-temple {
+          width: 10%;
+          font-size: 19px;
+          display: flex;
+          align-items: center;
+          margin-right: 0.6%;
+        }
+
+        &-mysteria {
+          width: 10%;
+          font-size: 19px;
+          display: flex;
+          align-items: center;
+        }
+
+        &-user {
+          width: 10%;
+          font-size: 19px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &-data {
+        width: 100%;
+        overflow: scroll;
+        height: 98%;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "./colors.scss";
+
+//body frame
+@mixin body {
+    flex-grow: 1;
+    height: 900px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 7px;
+    border: 1.5px solid $gray;
+}
+
+@mixin body-header-edit() {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between center;
+    align-items: center;
+    margin: 40px;
+
+    &-backspace {
+        background: url('../../../@static/icon/left.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        flex-grow: 0;
+        margin-right: 10px;
+    }
+
+    &-title {
+        flex-grow: 1;
+        text-align: left;
+        font-size: 28px;
+        font-weight: bold;
+        color: $navy;
+    }
+
+    &-btn {
+        width: 106px;
+        height: 34.5px;
+        margin-right: 5px;
+        border: 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: white;
+        background-color: $navy;
+    }
+}
+
+@mixin body-header {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between center;
+    align-items: center;
+}
+
+@mixin body-header-title {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: $navy;
+}
+
+@mixin body-header-search {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #062D47;
+
+    &-label-term,
+    &-label-createdAt {
+        margin: 0px 4px;
+    }
+
+    &-start,
+    &-end {
+        width: 159px;
+        height: 30px;
+        padding: 0px 5px;
+        color: #062D47;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: transparent;
+        border: 0.5px solid #062D47;
+        border-radius: 5px;
+    }
+
+    &-end {
+        margin: 0px 5px 0px 0px;
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 25px;
+        margin-left: 5px;
+        color: $navy;
+        font-family: 'Pretendard';
+        font-size: 15px;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0.5px solid $navy;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@mixin body-header-backspace {
+    background: url('../../../../@static/icon/left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+@mixin body-header-btn-list() {
+    width: 95px;
+    height: 45px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: $gray;
+    font-size: 18px;
+    font-weight: 300;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin body-header-btn-detail() {
+    width: 106px;
+    height: 34.5px;
+    margin-right: 5px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: $navy;
+}
+
+@mixin body-header-list() {
+    @include body-header();
+    padding: 35px 40px 15px 40px;
+
+    &-title {
+        @include body-header-title();
+    }
+
+    &-search {
+        @include body-header-search();
+    }
+
+    &-btn {
+        @include body-header-btn-list();
+    }
+}

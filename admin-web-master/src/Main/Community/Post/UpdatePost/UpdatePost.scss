@@ -1,0 +1,39 @@
+@import "../../Styles/header.scss";
+@import "../../Styles/body.scss";
+@import "../../Styles/contents.scss";
+
+.post-update {
+    &-header {
+        @include header();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            flex-grow: 1;
+            @include header-title();
+        }
+
+        &-search {
+            width: 423px;
+            height: 58px;
+            border-radius: 500px;
+            background-color: white;
+        }
+    }
+
+    &-body {
+        @include body();
+
+        &-header {
+            @include body-header-edit();
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: row;
+            padding: 0px 70px 40px 70px;
+            gap: 24px;
+        }
+    }
+}

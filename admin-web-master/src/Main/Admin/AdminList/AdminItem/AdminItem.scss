@@ -1,0 +1,87 @@
+.admin-item {
+    width: 100%;
+    height: fit-content;
+
+    &-info {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 40px;
+        padding-block: 20px;
+
+        &-data {
+            font-size: 20px;
+            font-weight: 500;
+            width: 100%;
+            height: 41px;
+            display: flex;
+            align-items: center;
+
+            &-checkbox {
+                margin-right: 34px;
+                cursor: pointer;
+            }
+        
+            &-idx {
+                width: 57px;
+                color: black;
+            }
+        
+            &-created-at {
+                flex:2.8;
+                color: black;
+            }
+        
+            &-name {
+                flex:1.8;
+                color: black;
+            }
+        
+            &-baptismal {
+                flex:3;
+                color: black;
+            }
+        
+            &-id {
+                color: black;
+            }
+        
+            &-phone {
+                color: black;
+                font-weight: 500;
+            }
+        
+            &-permission {
+                flex:4.5;
+                color: black;
+            }
+            &-residence {
+                flex:3;
+                color: black;
+            }
+            &-temple {
+                flex:3;
+                width: 90px;
+                color: black;
+            }
+
+            &-cancel-cause {
+               
+                flex:5;
+                color: black;
+            }
+        }
+
+        &-buttons {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+        }
+    }
+
+    &-divide-line {
+        border: 1px solid #DFE0EB;
+    }
+}

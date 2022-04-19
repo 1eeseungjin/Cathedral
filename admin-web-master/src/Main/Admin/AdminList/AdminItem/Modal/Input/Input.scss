@@ -1,0 +1,25 @@
+.admin-manage-modal-input {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    
+    &-title {
+        font-weight: 600;
+        font-size: 24px;
+        color: #9FA2B4;
+        width: 30%;
+    }
+
+    &-box {
+        width: 70%;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: transparent;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

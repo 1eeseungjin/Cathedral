@@ -1,0 +1,62 @@
+.item2 {
+  display: flex;
+  height: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfe0eb;
+  align-items: center;
+
+  &-check {
+    width: 2.6%;
+    margin-left: 2vw;
+  }
+
+  &-no {
+    width: 4.3%;
+    font-size: 18px;
+  }
+
+  &-date {
+    width: 8.3%;
+    font-size: 18px;
+  }
+
+  &-name {
+    font-size: 18px;
+    width: 6%;
+  }
+
+  &-region {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-id {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-temple {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-count {
+    width: 6.6%;
+    font-size: 18px;
+  }
+
+  &-reason {
+    width: 26%;
+    font-size: 18px;
+    text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+  }
+
+  svg {
+    margin-left: 90px;
+    cursor: pointer;
+  }
+}

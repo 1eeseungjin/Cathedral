@@ -1,0 +1,71 @@
+@import '../../../Community/Styles/body.scss';
+@import '../../../Community/Styles/table.scss';
+
+$default: 3.5%;
+
+$name: calc($default * 6);
+$type: calc($default * 4);
+$term: calc($default * 6);
+
+.achvm-list {
+    &-header {
+        @include body-header();
+        padding: 35px 40px 15px 40px;
+
+        &-title {
+            @include body-header-title();
+        }
+
+        &-search {
+            @include body-header-search();
+        }
+
+        &-addBtn {
+            @include body-header-btn-detail();
+        }
+    }
+
+    &-table {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+
+        &-head {
+            display: flex;
+            border-bottom: 2px solid $gray;
+            padding: 0px 30px;
+
+            &-name {
+                @include table-head($name);
+
+                &-sort {
+                    @include sortButton();
+                }
+            }
+
+            &-type {
+                @include table-head($type);
+
+                &-sort {
+                    @include sortButton();
+                }
+            }
+
+            &-term {
+                @include table-head($term);
+
+                &-sort {
+                    @include sortButton();
+                }
+            }
+
+            &-setting {
+                @include table-head(0);
+            }
+        }
+
+        &-items {
+            @include table-items();
+        }
+    }
+}

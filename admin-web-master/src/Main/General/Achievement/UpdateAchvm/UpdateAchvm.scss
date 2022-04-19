@@ -1,0 +1,127 @@
+@import '../../../Community/Styles/body.scss';
+@import '../../../Community/Styles/contents.scss';
+
+.achvm-update {
+    display: flex;
+    flex-direction: column;
+    
+    &-header {
+        @include body-header();
+        margin: 40px;
+
+        &-backspace {
+            @include body-header-backspace();
+        }
+
+        &-title {
+            @include body-header-title();
+        }
+
+        &-btn {
+            @include body-header-btn-detail();
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        padding: 0px 70px 40px 70px;
+        gap: 24px;
+        flex-grow: 1;
+
+        &-name {
+            @include content(null, 42px);
+        }
+
+        &-detail {
+            @include content(null, 188px);
+            &-value {
+                font-family: Pretendard;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #828282;
+                resize: none;
+            }
+        }
+
+        &-badge {
+            @include content(null, 100px);
+            width: 100px;
+            &-value {
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+                background-image: url('../../../../@static/icon/badge.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                filter:brightness(80%);
+            }
+        }
+
+        &-condition {
+            @include content(null, 50px);
+
+            &-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+            }
+
+            &-value {
+                width: 93px;
+                font-size: 18px;
+                color: #939393;
+            }
+            &-span {
+                font-size: 18px;
+            }
+        }
+
+        &-term {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &-label {
+                font-size: 14px;
+                font-weight: bold;
+                color: #9FA2B4;
+                margin-bottom: 6px;
+            }
+
+            &-value {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                &-start,
+                &-end {
+                    height: 42px;
+                    padding: 0px 11px;
+                    flex-grow: 1;
+                    font-size: 17px;
+                    color: #939393;
+                    font-weight: 400;
+                    border: 1px solid #CBCBCB;
+                    border-radius: 7px;
+                    background-color: white;
+                }
+
+                &-default {
+                    width: 100%;
+                    background-color: #FCFDFE;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #939393;
+                    border: 1px solid #CBCBCB;
+                    border-radius: 8px;
+                    padding: 11px;
+                    height: 43px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.standard {
+    border:1px solid #C4C4C4;
+    border-radius:15px;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.stat {
+    width: 81px;
+    height: 103px;
+    &-outer {
+        position: relative;
+    }
+}

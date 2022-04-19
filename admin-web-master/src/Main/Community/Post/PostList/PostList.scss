@@ -1,0 +1,131 @@
+@import "../../Styles/header.scss";
+@import "../../Styles/body.scss";
+@import "../../Styles/table.scss";
+
+$default: 3.7%;
+
+$index: calc($default * 1.4);
+$title: calc($default * 8);
+$community: calc($default * 5);
+$memberName: calc($default * 1.8);
+$createdAt: calc($default * 4);
+$views: calc($default * 1.8);
+
+.post {
+    &-header {
+        @include header();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        &-title {
+            flex-grow: 1;
+            @include header-title();
+        }
+
+        &-termSearch {
+            @include body-header-search();
+        }
+
+        &-search {
+            width: 423px;
+            height: 58px;
+            border-radius: 500px;
+            background-color: white;
+        }
+    }
+
+    &-body {
+        @include body();
+
+        &-header {
+            @include body-header();
+            position: relative;
+            padding: 35px 40px 15px 40px;
+
+            &-space {
+                flex-grow: 1;
+            }
+
+            &-btn {
+                @include body-header-btn-detail();
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                padding: 10px;
+                z-index: 10000;
+            }
+        }
+
+        &-table {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+
+            &-head {
+                display: flex;
+                border-bottom: 2px solid $gray;
+                padding: 0px 30px;
+
+                &-idx {
+                    @include table-head($index);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-title {
+                    @include table-head($title);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-name {
+                    @include table-head($memberName);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-community {
+                    @include table-head($community);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-createdAt {
+                    @include table-head($createdAt);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-views {
+                    @include table-head($views);
+
+                    &-sort {
+                        @include sortButton();
+                    }
+                }
+
+                &-setting {
+                    @include table-head(0);
+                }
+            }
+
+            &-items {
+                @include table-items();
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.Modal-dimmer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000080;
+    z-index: 10000;
+}
+
+.Modal {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+
+    &-btns-exit {
+        width: 30px;
+        height: auto;
+        border: 0px;
+        background-color: transparent;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    &-header {
+        text-align: right;
+        margin: 7px;
+    }
+
+    &-title {
+        margin-bottom: 50px;
+    }
+
+    &-contents {
+        margin-bottom: 50px;
+    }
+
+    &-btns-yes {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        background-color: #062D47;
+        color: white;
+        border: 0px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-btns-no {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}

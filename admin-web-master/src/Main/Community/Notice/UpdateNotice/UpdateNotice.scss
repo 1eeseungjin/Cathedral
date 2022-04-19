@@ -1,0 +1,18 @@
+@import "../../Styles/header.scss";
+@import "../../Styles/body.scss";
+@import "../../Styles/contents.scss";
+
+.notice-update {
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        @include body-header-edit();
+    }
+
+    &-body {
+        display: flex;
+        padding: 0px 70px 40px 70px;
+        gap: 24px;
+    }
+}

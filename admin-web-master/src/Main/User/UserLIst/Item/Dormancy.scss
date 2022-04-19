@@ -1,0 +1,60 @@
+.dormancy {
+  display: flex;
+  height: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfe0eb;
+  align-items: center;
+  width: 100%;
+
+  &-check {
+    width: 2.6%;
+    margin-left: 2vw;
+  }
+
+  &-no {
+    width: 4.3%;
+    font-size: 18px;
+  }
+
+  &-date {
+    width: 8.3%;
+    font-size: 18px;
+  }
+
+  &-name {
+    width: 6%;
+    font-size: 18px;
+  }
+
+  &-region {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-id {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-temple {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  &-period {
+    width: 8.3%;
+    font-size: 18px;
+  }
+
+  &-more {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+
+    & > {
+      cursor: pointer;
+    }
+  }
+}

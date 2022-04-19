@@ -1,0 +1,66 @@
+@import "../Community/Styles/header.scss";
+@import "../Community/Styles/body.scss";
+
+.general {
+        flex-grow: 1;
+        margin: 40px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+    &-header {
+        @include header();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            @include header-title();
+            flex-grow: 1;
+        }
+
+        &-radios {
+            display: flex;
+            border-radius: 10px;
+            margin-right: 20px;
+            #prayer {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            #faq {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            &-radio {
+                display: none;
+
+               &:checked+.general-header-radios-label {
+                    background-color: navy;
+                    color: white;
+                }
+            }
+            &-label {
+                text-align: center;
+                width: 112px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 14px;
+                font-weight: 600;
+                border: 0.5px solid #062D47;
+            }
+        }
+
+        &-search {
+            width: 423px;
+            height: 58px;
+            border-radius: 500px;
+            background-color: white;
+        }
+    }
+
+    &-body {
+        @include body();
+        display: flex;
+        flex-direction: column;
+    }
+}

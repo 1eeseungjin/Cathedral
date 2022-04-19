@@ -1,0 +1,33 @@
+@import "../../../Community/Styles/header.scss";
+@import "../../../Community/Styles/body.scss";
+@import "../../../Community/Styles/contents.scss";
+
+.prayer-update {
+    display: flex;
+    flex-direction: column;
+    
+    &-header {
+        @include body-header();
+        margin: 40px;
+
+        &-backspace {
+            @include body-header-backspace();
+        }
+
+        &-title {
+            @include body-header-title();
+        }
+
+        &-btn {
+            @include body-header-btn-detail();
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 70px 40px 70px;
+        gap: 24px;
+        flex-grow: 1;
+    }
+}

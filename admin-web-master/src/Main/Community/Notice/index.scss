@@ -1,0 +1,26 @@
+@import "../Styles/header.scss";
+@import "../Styles/body.scss";
+
+.notice {
+    &-header {
+        @include header();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            @include header-title();
+        }
+
+        &-search {
+            width: 423px;
+            height: 58px;
+            border-radius: 500px;
+            background-color: white;
+        }
+    }
+
+    &-body {
+        @include body();
+    }
+}

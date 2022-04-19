@@ -1,0 +1,82 @@
+@import "./colors.scss";
+
+@mixin table-head($width) {
+    width: $width;
+    color: #9FA2B4;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+@mixin table-items {
+    font-size: 15px;
+    overflow: auto;
+    height: 750px;
+}
+
+@mixin table-item($width) {
+    width: $width;
+    flex-grow: if($width==0, 1, 0);
+    text-align: if($width==0, right, left);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+@mixin sortButton {
+    background: url('../../../../@static/icon/table-sort.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    border: 0px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin setting {
+    &-btn {
+        background: url('../../../@static/icon/more.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 5.33px;
+        height: 21.33px;
+        border: 0px;
+        text-align: center;
+    }
+
+    &-menu {
+        width: 120px;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        margin: 60px 45px 0px 0px;
+        color: #000000;
+        background-color: white;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: 18px;
+        font-weight: 300;
+        border: 1px solid $gray;
+        border-radius: 5px;
+
+        &-item {
+            padding: 12px 20px;
+            text-decoration: none !important;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $gray;
+            }
+        }
+    }
+}
